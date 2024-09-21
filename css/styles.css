@@ -1,5 +1,14 @@
 :root {
-    
+  --primari-fonts: "Open Sans" sans-serif;
+  /* Text colors */
+  --main-txt-cl: rgb(255, 255, 255);
+  --accent-txt-cl: rgb(251, 215, 132);
+  --bt-txt-cl: rgb(0, 0, 0);
+  /* Bg colors */
+  --main-bg-cl: rgb(0, 0, 0);
+  /* Button colors */
+  --main-bt-cl: rgb(255, 163, 67);
+  /* Others */
 }
 
 /**
@@ -9,10 +18,106 @@
 */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+  font-family: var(--primari-fonts);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
 }
+
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+/* Reset End */
+.container {
+  width: 1751px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 85px;
+  padding-right: 85px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/**
+  |============================
+  | Body styles
+  |============================
+*/
+.background_img {
+  position: absolute;
+  z-index: -1;
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {}
+
+.header-container {
+  display: flex;
+}
+
+.container {}
+
+.header-logo {
+  width: 87px;
+  max-height: 33px;
+}
+
+.header-nav {}
+
+
+.header-nav-list {
+  display: flex;
+  
+}
+
+.header-nav-item {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.header-nav-link {}
+
+.header-form {}
