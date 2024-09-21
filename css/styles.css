@@ -2,6 +2,7 @@
   --primari-fonts: "Open Sans" sans-serif;
   /* Text colors */
   --main-txt-cl: rgb(255, 255, 255);
+  --ccent-title-cl: rgb(255, 193, 120);
   --accent-txt-cl: rgb(251, 215, 132);
   --bt-txt-cl: rgb(0, 0, 0);
   /* Bg colors */
@@ -95,6 +96,8 @@ button {
 
 .header-container {
   display: flex;
+  padding-top: 65px;
+  justify-content: space-between;
 }
 
 .container {}
@@ -106,10 +109,9 @@ button {
 
 .header-nav {}
 
-
 .header-nav-list {
   display: flex;
-  
+  gap: 50px;
 }
 
 .header-nav-item {
@@ -121,3 +123,80 @@ button {
 .header-nav-link {}
 
 .header-form {}
+
+.header-form-btn {}
+
+.header-form-input {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/**
+  |============================
+  | Hero styles
+  |============================
+*/
+.hero {}
+
+.container {}
+
+.hero-uppertitle {
+  /* border-top: 2px solid var(--ccent-title-cl); */
+  display: grid;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--ccent-title-cl);
+  margin-bottom: 32px;
+
+
+}
+
+.hero-box {
+  display: flex;
+}
+
+.hero-box-list {
+  margin-right: 396px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  writing-mode: vertical-rl;
+  margin-bottom: 20px;
+}
+
+.hero-list {}
+
+.list {}
+
+.hero-item {
+  margin-bottom: 20px;
+}
+
+.hero-list-link {}
+
+.hero-list-img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-title {
+  max-width: 950px;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.hero-title-accent {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.hero-desc {}
