@@ -87,6 +87,14 @@ button {
   z-index: -1;
 }
 
+.uppertitle {}
+
+.title {}
+
+.text {}
+
+.link-read-more {}
+
 /**
   |============================
   | Header styles
@@ -158,13 +166,14 @@ button {
 
 .hero-box {
   display: flex;
+  margin-bottom: 128px;
 }
 
 .hero-box-list {
   margin-right: 396px;
 }
 
-.text {
+.text-social {
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
@@ -199,4 +208,40 @@ button {
   font-weight: 700;
 }
 
-.hero-desc {}
+.hero-desc {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 875px;
+}
+
+.hero-desc-token {}
+
+/**
+  |============================
+  | About styles
+  |============================
+*/
+.about {}
+
+.about-container {
+  Width: 1462px;
+  
+
+  Outline: 2px solid red;
+  Outline-offset: -2px;
+}
+
+.container {}
+
+.about-img {}
+
+.uppertitle {}
+
+.title {}
+
+.text {}
+
+.link-read-more {}
