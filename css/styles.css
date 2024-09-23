@@ -70,11 +70,20 @@ button {
   width: 1751px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 85px;
-  padding-right: 85px;
+  /* padding-left: 85px;
+  padding-right: 85px; */
 
   outline: 2px solid red;
   outline-offset: -2px;
+}
+
+.container-main {
+  display: flex;
+
+  Width: 1462px;
+
+  Outline: 2px solid red;
+  Outline-offset: -2px;
 }
 
 /**
@@ -82,18 +91,52 @@ button {
   | Body styles
   |============================
 */
+
+.bg-fon {}
+
 .background_img {
+  width: 100%;
+  height: auto;
   position: absolute;
   z-index: -1;
 }
 
-.uppertitle {}
+.uppertitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 
-.title {}
+  margin-bottom: 27px;
 
-.text {}
+  color: var(--accent-txt-cl);
 
-.link-read-more {}
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  margin-bottom: 27px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+
+  margin-bottom: 27px;
+}
+
+.link-read-more {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: var(--accent-txt-cl);
+}
 
 /**
   |============================
@@ -104,7 +147,8 @@ button {
 
 .header-container {
   display: flex;
-  padding-top: 65px;
+  padding: 65px 85px;
+  padding-bottom: 198px;
   justify-content: space-between;
 }
 
@@ -153,6 +197,7 @@ button {
   /* border-top: 2px solid var(--ccent-title-cl); */
   display: grid;
   justify-content: center;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
@@ -178,6 +223,7 @@ button {
   font-weight: 600;
   line-height: 25px;
   writing-mode: vertical-rl;
+
   margin-bottom: 20px;
 }
 
@@ -211,10 +257,11 @@ button {
 .hero-desc {
   display: flex;
   justify-content: center;
+  margin-bottom: 875px;
+
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 875px;
 }
 
 .hero-desc-token {}
@@ -226,22 +273,83 @@ button {
 */
 .about {}
 
-.about-container {
-  Width: 1462px;
-  
-
-  Outline: 2px solid red;
-  Outline-offset: -2px;
-}
+.about-container {}
 
 .container {}
 
 .about-img {}
 
+.about-contetnt {
+  width: 632px;
+  height: 546px;
+  margin-top: 88px;
+  margin-left: 235px;
+}
+
 .uppertitle {}
+
+.about-title {
+  max-width: 555px;
+  padding-right: 77px;
+}
+
+.about-text {
+  width: 600px;
+  height: auto;
+}
+
+.link-read-more {}
+
+/**
+  |============================
+  | Motivation styles
+  |============================
+*/
+.motivation {}
+
+.motivation-container {
+  display: block;
+  height: 985px;
+}
+
+.container {}
+
+.motivation-img {
+  max-width: 1461px;
+  position: absolute;
+  z-index: -1;
+}
+
+.motivation-content {
+  width: 1163px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 530px;
+}
+
+.mitivation-uppertitle {
+  text-align: center;
+}
+
+.motivation-title {
+  max-width: 705px;
+
+  text-align: center;
+  margin: 0 229px;
+}
 
 .title {}
 
+.motivation-text {
+  text-align: center;
+  margin: 0 114px;
+
+  margin-bottom: 39px;
+}
+
 .text {}
 
-.link-read-more {}
+.link-read-more {
+  text-align: center;
+}
