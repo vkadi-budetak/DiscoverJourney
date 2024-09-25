@@ -2,7 +2,7 @@
   --primari-fonts: "Open Sans" sans-serif;
   /* Text colors */
   --main-txt-cl: rgb(255, 255, 255);
-  --ccent-title-cl: rgb(255, 193, 120);
+  --accent-title-cl: rgb(255, 193, 120);
   --accent-txt-cl: rgb(251, 215, 132);
   --bt-txt-cl: rgb(0, 0, 0);
   --footer-accent-cl: rgb(255, 209, 160);
@@ -73,13 +73,12 @@ button {
 
 .container {
   width: 1751px;
+  max-height: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 85px;
-  padding-right: 85px; */
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .container-main {
@@ -89,8 +88,8 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  /* Outline: 2px solid red;
-  Outline-offset: -2px; */
+  Outline: 2px solid red;
+  Outline-offset: -2px;
 }
 
 /**
@@ -98,8 +97,6 @@ button {
   | Body styles
   |============================
 */
-
-.bg-fon {}
 
 .background_img {
   width: 100%;
@@ -150,7 +147,9 @@ button {
   | Header styles
   |============================
 */
-.header {}
+
+/* .header {width: 1920px;
+  height: 1200px;} */
 
 .header-container {
   display: flex;
@@ -158,15 +157,6 @@ button {
   padding-bottom: 198px;
   justify-content: space-between;
 }
-
-.container {}
-
-.header-logo {
-  width: 87px;
-  max-height: 33px;
-}
-
-.header-nav {}
 
 .header-nav-list {
   display: flex;
@@ -179,11 +169,20 @@ button {
   line-height: 1.4;
 }
 
-.header-nav-link {}
+.header-form {
+  opacity: 0.6;
 
-.header-form {}
+}
 
-.header-form-btn {}
+.header-form-input {
+  width: 55px;
+  height: 23px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 
 .header-form-input {
   font-size: 17px;
@@ -196,30 +195,13 @@ button {
   | Hero styles
   |============================
 */
-.hero {}
-
-.container {}
-
-.hero-uppertitle {
-  display: grid;
-  justify-content: center;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--ccent-title-cl);
-  margin-bottom: 32px;
-}
-
-.hero-box {
+.hero-container {
   display: flex;
-  margin-bottom: 128px;
+  gap: 396px;
 }
 
 .hero-box-list {
-  margin-right: 396px;
+  margin-top: 72px;
 }
 
 .text-social {
@@ -227,23 +209,37 @@ button {
   font-weight: 600;
   line-height: 25px;
   writing-mode: vertical-rl;
-
   margin-bottom: 20px;
 }
-
-.hero-list {}
-
-.list {}
 
 .hero-item {
   margin-bottom: 20px;
 }
 
-.hero-list-link {}
+.hero-item:last-child {
+  margin-bottom: 0;
+}
 
-.hero-list-img {
-  width: 24px;
-  height: 24px;
+.hero-uppertitle {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--accent-title-cl);
+  margin-bottom: 32px;
+}
+
+.hero-uppertitle::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background-color: var(--accent-title-cl);
 }
 
 .hero-title {
@@ -251,6 +247,8 @@ button {
   font-size: 88px;
   font-weight: 400;
   line-height: 1.1;
+
+  margin-bottom: 128px;
 }
 
 .hero-title-accent {
@@ -259,30 +257,19 @@ button {
 }
 
 .hero-desc {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 875px;
-
+  display: block;
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
+  margin-bottom: 875px;
 }
-
-.hero-desc-token {}
 
 /**
   |============================
   | About styles
   |============================
 */
-.about {}
-
-.about-container {}
-
-.container {}
-
-.about-img {}
-
 .about-contetnt {
   width: 632px;
   height: 546px;
@@ -290,7 +277,21 @@ button {
   margin-left: 235px;
 }
 
-.uppertitle {}
+
+.uppertitle-line {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+.uppertitle-line::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background-color: var(--accent-txt-cl);
+}
 
 .about-title {
   max-width: 555px;
@@ -333,7 +334,28 @@ button {
 }
 
 .mitivation-uppertitle {
-  text-align: center;
+  display: flex;
+  gap: 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mitivation-uppertitle::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+
+  background-color: var(--accent-txt-cl);
+}
+
+.mitivation-uppertitle::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+
+  background-color: var(--accent-txt-cl);
 }
 
 .motivation-title {
