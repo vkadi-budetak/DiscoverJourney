@@ -11,6 +11,8 @@
   /* Button colors */
   --main-bt-cl: rgb(255, 163, 67);
   /* Others */
+  --anim-fast: 400ms ease-in;
+
 }
 
 /**
@@ -21,6 +23,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +75,7 @@ button {
 
 /* Reset End */
 .section {
-  padding-bottom: 250px;
+  /* padding-bottom: 250px; */
 }
 
 .container {
@@ -144,6 +147,7 @@ button {
   line-height: 1.4;
 
   color: var(--accent-txt-cl);
+  cursor: pointer;
 }
 
 /**
@@ -189,15 +193,53 @@ button {
   line-height: 1.4;
 }
 
+.header-nav-link {
+  display: flex;
+  position: relative;
+
+  transition: var(--anim-fast);
+}
+
+.header-nav-link.current {
+  color: var(--accent-title-cl);
+  border-radius: 10px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-title-cl);
+  transform: scale(1.3);
+}
+
+.header-nav-link.current::before {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--accent-title-cl);
+  transition: var(--anim-fast);
+}
+
+.header-nav-link.current:hover::before  {
+  background-color: transparent;
+}
+
+
 .header-form {
   opacity: 0.6;
-
 }
 
 .header-form-label {
   display: flex;
   justify-content: center;
   align-items: end;
+
+  cursor: pointer;
 }
 
 .header-form-icon {
@@ -213,7 +255,6 @@ button {
   cursor: pointer;
 
 }
-
 
 .header-form-input {
   font-size: 17px;
@@ -290,13 +331,26 @@ button {
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 502px;
+
+  transition: color var(--anim-fast);
 }
+
+.hero-desc:hover,
+.hero-desc:hover {
+color: var(--accent-title-cl);
+}
+
 
 /**
   |============================
   | About styles
   |============================
 */
+
+.about {
+  margin-bottom: 250px;
+}
+
 .about-contetnt {
   width: 632px;
   height: 546px;
@@ -330,14 +384,23 @@ button {
   height: auto;
 }
 
-.link-read-more {}
+.link-read-more {
+  transition: var(--anim-fast);
+}
+
+.link-read-more:hover,
+.link-read-more:hover {
+color: white;
+}
 
 /**
   |============================
   | Motivation styles
   |============================
 */
-.motivation {}
+.motivation {
+  margin-bottom: 250px;
+}
 
 .motivation-container {
   display: block;
@@ -413,8 +476,9 @@ button {
   | Culture styles
   |============================
 */
-
-.culture {}
+.culture {
+  margin-bottom: 250px;
+}
 
 .container {}
 
@@ -445,7 +509,9 @@ button {
   |============================
 */
 
-.footer {}
+.footer {
+  padding-bottom: 118px;
+}
 
 .footer-container {
   display: block;
@@ -492,6 +558,17 @@ button {
 
   border-radius: 8px;
   background-color: var(--main-bt-cl);
+  transition: var(--anim-fast);
+
+  cursor: pointer;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  color: var(--bt-txt-cl);
+  border-radius: 8px;
+  background-color: var(--accent-title-cl);
+  border: 1px solid var(--main-txt-cl);
 }
 
 .footer-box-info {
@@ -511,10 +588,21 @@ button {
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.3px;
+
+  margin-bottom: 50px;
 }
 
 .footer-form {
   max-width: 400px;
+}
+
+.footer-label {
+
+}
+
+.footer-input {
+  background: transparent;
+  border: none;
 }
 
 .footer-form-btn {}
@@ -524,18 +612,34 @@ button {
   gap: 184px;
 }
 
-.footer-list {}
+.footer-list {
+}
 
 .footer-list li:first-child {
   color: var(--footer-accent-cl);
 }
 
-.footer-iteam {}
+.footer-list li:first-child:hover,
+.footer-list li:first-child:focus {
+  transform: scale(1.2);
+  transform-origin: left;
+}
+
+.footer-iteam {
+  transition: var(--anim-fast);
+}
+
+.footer-iteam:hover,
+.footer-iteam:focus {
+  color: var(--accent-title-cl);
+}
 
 .footer-link {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.23px;
+
+  cursor: pointer;
 }
 
 .footer-info {
@@ -559,6 +663,8 @@ button {
   letter-spacing: -0.2px;
 
   margin-right: 50px;
+
+  color: var(--main-txt-cl);
 }
 
 .footer-text-privat {}
@@ -571,6 +677,11 @@ button {
 .footer-social-link {}
 
 .footer-socail-iteam {}
+
+.hero-list-img:hover,
+.hero-list-img:focus {
+color: var(--main-bt-cl);
+}
 
 .footer-social-icon {}
 

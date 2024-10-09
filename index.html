@@ -31,7 +31,7 @@
                 <nav class="header-nav">
                     <ul class="header-nav-list list">
                         <li class="header-nav-item">
-                            <a class="header-nav-link link" href="">Information</a>
+                            <a class="header-nav-link current link" href="">Information</a>
                         </li>
                         <li class="header-nav-item">
                             <a class="header-nav-link link" href="">About us</a>
@@ -58,7 +58,7 @@
                     <p class="text-social">Follow us</p>
                     <ul class="hero-list list">
                         <li class="hero-item">
-                            <a class="heri-list-link" href="https://www.instagram.com/" target="_blank"
+                            <a class="hero-list-link" href="https://www.instagram.com/" target="_blank"
                                 rel="noopener noreferrer" aria-label="instagram icon">
                                 <svg class="hero-list-img" width="24px" height="24px">
                                     <use href="./icons/icons.svg#icon-instagram"></use>
@@ -66,7 +66,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a class="heri-list-link" href="https://www.twitter.com/" target="_blank"
+                            <a class="hero-list-link" href="https://www.twitter.com/" target="_blank"
                                 rel="noopener noreferrer" aria-label="twitter icon">
                                 <svg class="hero-list-img" width="24px" height="24px">
                                     <use href="./icons/icons.svg#icon-twitter"></use>
@@ -74,7 +74,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a class="heri-list-link" href="https://www.facebook.com/" target="_blank"
+                            <a class="hero-list-link" href="https://www.facebook.com/" target="_blank"
                                 rel="noopener noreferrer" aria-label="facebook icon">
                                 <svg class="hero-list-img" width="24px" height="24px">
                                     <use href="./icons/icons.svg#icon-facebook"></use>
@@ -173,10 +173,14 @@
                 <div class="footer-box-info">
                     <div class="footer-box-send">
                         <h3 class="footer-title">Let's go on vacation, Make your day</h3>
-                        <form class="footer-form">
-                            <input type="text" placeholder="Email address" />
-                            <button class="footer-form-btn" type="submit">Search</button>
+
+                        <form class="footer-form" name="footer_form">
+                            <label class="footer-label">
+                                <input class="footer-input" type="text" placeholder="Email address" />
+                            </label>
+                            <button class="footer-form-btn" type="submit">></button>
                         </form>
+
                     </div>
                     <div class="footer-box-infolist">
                         <ul class="footer-list list">
@@ -228,8 +232,8 @@
                 </div>
                 <div class="footer-info">
                     <div class="footer-container-info">
-                        <p class="footer-text-info">Terms & Conditions</p>
-                        <p class="footer-text-privat footer-text-info">Privacy Policy</p>
+                        <a class="footer-text-info link" href="">Terms & Conditions</a>
+                        <a class="footer-text-privat footer-text-info link" href="">Privacy Policy</a>
                     </div>
                     <ul class="footer-social list">
                         <li class="footer-social-link">
@@ -258,7 +262,7 @@
                         </li>
                     </ul>
                 </div>
-                <p class="footer-slogan">Copyright 2021 QWERy</p>
+                <p class="footer-slogan">Copyright 2024 QWERy</p>
             </div>
         </section>
     </footer>
