@@ -225,7 +225,7 @@ button {
   transition: var(--anim-fast);
 }
 
-.header-nav-link.current:hover::before  {
+.header-nav-link.current:hover::before {
   background-color: transparent;
 }
 
@@ -337,7 +337,7 @@ button {
 
 .hero-desc:hover,
 .hero-desc:hover {
-color: var(--accent-title-cl);
+  color: var(--accent-title-cl);
 }
 
 
@@ -390,7 +390,7 @@ color: var(--accent-title-cl);
 
 .link-read-more:hover,
 .link-read-more:hover {
-color: white;
+  color: white;
 }
 
 /**
@@ -593,27 +593,53 @@ color: white;
 }
 
 .footer-form {
-  max-width: 400px;
+  display: flex;
 }
 
 .footer-label {
-
+  border-bottom: 1.4px solid var(--main-txt-cl);
+  opacity: 0.3;
 }
 
 .footer-input {
+  width: 220px;
   background: transparent;
   border: none;
+  outline: none;
+  padding: 19px 0 30px 15px;
+  margin-right: 120px;
+  padding: 19px 0 30px 15px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+
+  color: var(--main-txt-cl);
 }
 
-.footer-form-btn {}
+.footer-form-btn {
+  width: 69px;
+  height: 69px;
+  border-radius: 8px 8px 0px 0px;
+  background: var(--main-bt-cl);
+  color: black;
+
+  transition: var(--anim-fast);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  border: 1px solid white;
+  color: var(--main-txt-cl)
+}
 
 .footer-box-infolist {
   display: flex;
   gap: 184px;
 }
 
-.footer-list {
-}
+.footer-list {}
 
 .footer-list li:first-child {
   color: var(--footer-accent-cl);
@@ -680,7 +706,7 @@ color: white;
 
 .hero-list-img:hover,
 .hero-list-img:focus {
-color: var(--main-bt-cl);
+  color: var(--main-bt-cl);
 }
 
 .footer-social-icon {}
